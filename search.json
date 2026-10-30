@@ -2,15 +2,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "stop-at-six-quarto",
+    "title": "Stop at Six Minnetonka",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nTest"
+    "text": "Home page"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News and Updates",
+    "section": "",
+    "text": "News and updates"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Us",
     "section": "",
-    "text": "About this site"
+    "text": "About us"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources and Contacts",
+    "section": "",
+    "text": "Resources and Contacts"
   }
 ]
