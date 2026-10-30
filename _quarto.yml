@@ -10,9 +10,9 @@ website:
       - href: about.qmd
         text: About Us
       - href: news.qmd
-        text: News and Updates
+        text: News & Updates
       - href: resources.qmd
-        text: Resources and Contact
+        text: Resources & Contact
 
 format:
   html:
