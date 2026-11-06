@@ -13,6 +13,7 @@ website:
         text: News & Updates
       - href: resources.qmd
         text: Resources & Contact
+  page-footer: "©️ 2026 Minnetonka Stop at Six"
 
 format:
   html:
