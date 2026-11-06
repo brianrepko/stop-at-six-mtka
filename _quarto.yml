@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Stop at Six Minnetonka"
+  title: "Minnetonka Stop at Six"
   navbar:
     left:
       - href: index.qmd
@@ -17,8 +17,10 @@ website:
 format:
   html:
     theme:
-      - cosmo
+      - sandstone
       - brand
     css: styles.css
-    toc: true
+    toc: false
+    link-external-icon: true
+    link-external-newwindow: true
 

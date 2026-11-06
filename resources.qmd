@@ -1,5 +1,55 @@
 ---
-title: "Resources and Contacts"
+filters: 
+  - jlgraves-ubc/forms
+form:
+  id: interestForm
+  action: "javascript:submit()"
+  submit: "Submit"
+  method: GET
+  fields:
+    - name: Name
+      id: name
+      type: text
+      label: "Name *"
+      required: true
+    - name: Email
+      id: email
+      type: email
+      label: "Email"
+    - name: Message
+      id: message
+      type: textarea
+      label: "Message"
+      height: 10
+    - name: Interests
+      id: interests
+      type: checkbox
+      label: "Interests"
+      values:
+        - text: "Volunteering"
+          value: "volunteer"
+        - text: "Signature Gathering"
+          value: "signatures"
+        - text: "Receive Updates"
+          value: "updates"
 ---
 
-Resources and Contacts
+# Get Involved
+
+Interested in helping with Minnetonka Stop at Six?
+Use the form below to ask a question, express interest in volunteering, or learn how to help gather signatures when the petition is ready.
+
+{{<form>}}
+
+# Mailing address and donations
+
+```
+Minnetonka Stop at Six
+5524 Dominick Drive
+Minnetonka, MN 55343
+```
+
+# Resources
+
+* Link to city budget documents, levy information, City Council agendas and recordings and final proposal / petition.
+

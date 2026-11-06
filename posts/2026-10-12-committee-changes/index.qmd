@@ -1,0 +1,11 @@
+---
+title: "Committee Changes"
+description: subtitle
+date: 2026-10-12
+categories: 
+  - "committee"
+---
+
+## test
+
+This is a test of a post within a website

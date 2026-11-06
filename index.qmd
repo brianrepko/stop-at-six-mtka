@@ -1,5 +1,22 @@
 ---
-title: "Home Page"
 ---
 
-Home page
+Minnetonka Stop at Six is a resident-led committee working to establish a 6% cap on annual increases in the City of Minnetonka's property tax levy.
+Our goal is to help keep Minnetonka a great, affordable place to live through a budget initiative focused on the cap.
+
+# The Proposal
+
+* Short explanation
+* Link to the final proposal
+
+# The Process
+
+* Short explanation
+* Link to the petition language
+
+
+* Levy forecast chart
+* Links
+  * Learn About the Proposal
+  * Get Involved
+  * Donate
