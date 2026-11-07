@@ -36,5 +36,16 @@ This allows for the elevated property tax levy's based on the ... to be complete
 
 # Historical Levy Rates
 
+```{r}
+#| label: fig-taxrates
+#| fig-cap: "Yearly Property Tax Levy"
+#| warning: false
+#| echo: false
+library(ggplot2)
+years <- 2021:2027
+rates <- c(3.6, 3.7, 4.3, 7.75, 7.23, 7.91, 6.7)
+ggplot(data.frame(years, rates), aes(x=years,y=rates)) + geom_line()
+```
+
 You can find more detailed resources on the [Resources & Contact page](./resources.html#resources)
 
