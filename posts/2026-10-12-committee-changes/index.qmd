@@ -1,11 +1,13 @@
 ---
 title: "Committee Changes"
-description: subtitle
+description: New members and roles
 date: 2026-10-12
 categories: 
   - "committee"
 ---
 
-## test
+On Oct 12th, the committee met to officially accept the addition of Kristin Gaarder and Tracy Ericksen to the committee.
 
-This is a test of a post within a website
+With all 5 members present, Kelly Chermack was elected as President and Tom Stockert was elected as both Treasurer and Secretary.
+
+The other item of business was a review of plans - including this website and petition timeline.
