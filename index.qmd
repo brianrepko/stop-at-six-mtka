@@ -24,7 +24,7 @@ However, the budget changes; the levy can't grow more than 6% in a year without 
 Legally, the Minnetonka Stop at Six proposal is a Minnetonka Charter Budget Amendment.
 It limits annual property tax levy increases to 6% - unless there is an approval vote from the residents.
 
-You can find the current _draft_ proposal language [here](./files/stop-at-six.pdf)
+You can find the current _draft_ proposal language [here](./files/stop-at-six-5.21-v3-charter-amendment.pdf){target="_blank"}
 
 # The Process
 
@@ -41,14 +41,50 @@ In the future, the city would have an extra two percent plus to better Minnetonk
 
 ```{r}
 #| label: fig-taxrates
-#| fig-cap: "Yearly Property Tax Levy"
+#| fig-cap: "Source: MN DOR (actual), City of Minnetonka (future)"
 #| warning: false
 #| echo: false
 library(ggplot2)
-years <- 2021:2027
-rates <- c(3.6, 3.7, 4.3, 7.75, 7.23, 7.91, 6.7)
-ggplot(data.frame(years, rates), aes(x=years,y=rates)) + geom_line()
+taxdata <- tibble::tribble(
+  ~years, ~rates, ~safety, ~future,
+  2006, 9.8, F, F,
+  2007, 9.3, F, F,
+  2008, 4.7, F, F,
+  2009, 5.7, F, F,
+  2010, 2.0, F, F,
+  2011, 2.9, F, F,
+  2012, 0.9, F, F,
+  2013, 1.5, F, F,
+  2014, 2.8, F, F,
+  2015, 2.9, F, F,
+  2016, 4.0, F, F,
+  2017, 5.0, F, F,
+  2018, 3.6, F, F,
+  2019, 3.8, F, F,
+  2020, 6.9, F, F,
+  2021, 3.5, F, F,
+  2022, 5.6, F, F,
+  2023, 6.4, F, F,
+  2024, 7.5, T, F,
+  2025, 7.3, T, F,
+  2026, 7.9, T, F,
+  2027, 6.4, T, F,
+  2028, 7.4, T, T,
+  2029, 4.4, F, T
+)
+taxdata$years <- as.integer(taxdata$years)
+ggplot(taxdata, aes(x=years, y=rates, fill=safety, color=future)) + 
+  geom_col() + 
+  scale_fill_manual(values = c('grey50', 'blue')) +
+  scale_color_manual(values = c('grey50', 'red')) +
+  geom_text(aes(label=format(rates, nsmall=1)), lineheight = 0.7, vjust = -0.2, color='black') + 
+  geom_hline(yintercept = 6, linetype = "dashed", color = "red") + 
+  labs(title="Levies Total - Year-over-Year % Increase", x = "Year", y = "% Increase", fill = "Public Safety Year?", color = "Future Year?")
 ```
 
-You can find more detailed resources on the [Resources & Contact page](./resources.html#resources)
+# What Can I Do?
 
+There are lots of ways to support Minnetonka Stop at Six!
+
+You can donate, volunteer for various tasks, gather signatures, organize a "town hall", or request to receive updates.
+You can find an email form, donation information, and links to find out more on the [Resources & Contact page](./resources.html)

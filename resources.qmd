@@ -41,6 +41,11 @@ Use the form below to ask a question, express interest in volunteering, or learn
 
 {{<form>}}
 
+# Social Media
+
+* [Facebook](https://www.facebook.com/profile.php?id=61585776162686)
+* [Nextdoor](https://nextdoor.com/page-admin/ads-management/?profile_id=174444941)
+
 # Mailing address and donations
 
 ```
@@ -53,6 +58,7 @@ Minnetonka, MN 55343
 
 We will continue to update this list with resources - please let us know if we are missing anything
 
+* [Minnesota Dept of Revenue Property Tax History Data](https://www.revenue.state.mn.us/property-tax-history-data)
 * [Minnetonka Budget project on Minnetonka Matters](https://www.minnetonkamatters.com/minnetonka-budget)
 * 2027
   * [Sep 16, 2026 budget and levy presentation](https://www.minnetonkamn.gov/home/showdocument?id=16587&t=639251462545898101)
