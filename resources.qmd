@@ -1,9 +1,29 @@
 ---
 filters: 
   - jlgraves-ubc/forms
+include-in-header: 
+  text: |
+    <script>
+      function submitForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var msg = document.getElementById('message').value;
+        var interests = document.getElementsByName('Interests');
+        var intMsg = "Interests: ";
+        for (var i = 0; i < interests.length; i++) {
+          if (interests[i].checked) {
+            intMsg += interests[i].value + ",";
+          }
+        }
+        var link = "mailto:brian.repko@learnthinkcode.com"
+                 + "?subject=" + encodeURIComponent("Minnetonka Stop at Six")
+                 + "&body=" + encodeURIComponent(name + " (" + email + ") is interested in Minnetonka Stop at Six\n" + intMsg + "\n\n" + msg);
+        window.location.href = link;
+      }
+    </script>
 form:
   id: interestForm
-  action: "javascript:submit()"
+  action: "javascript:submitForm()"
   submit: "Submit"
   method: GET
   fields:
