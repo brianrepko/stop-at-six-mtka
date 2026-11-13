@@ -75,6 +75,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+  function submitForm() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('message').value;
+    var interests = document.getElementsByName('Interests');
+    var intMsg = "Interests: ";
+    for (var i = 0; i < interests.length; i++) {
+      if (interests[i].checked) {
+        intMsg += interests[i].value + ",";
+      }
+    }
+    var link = "mailto:brian.repko@learnthinkcode.com"
+             + "?subject=" + encodeURIComponent("Minnetonka Stop at Six")
+             + "&body=" + encodeURIComponent(name + " (" + email + ") is interested in Minnetonka Stop at Six\n" + intMsg + "\n\n" + msg);
+    window.location.href = link;
+  }
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -135,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Get Involved</h1>
 <p>Interested in helping with Minnetonka Stop at Six? Use the form below to ask a question, express interest in volunteering, or learn how to help gather signatures when the petition is ready.</p>
 <p></p><div id="form-div" class="form-wrapper">
- <form id="form" action="javascript:submit()" method="GET">
+ <form id="form" action="javascript:submitForm()" method="GET">
 <div class="form-group">
 <label for="name" class="form-label mt-4">Name *</label>
   <input type="text" id="name" name="Name" class="form-control" required="">
