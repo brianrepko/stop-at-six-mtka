@@ -73,6 +73,15 @@ Minnetonka Stop at Six
 5524 Dominick Drive
 Minnetonka, MN 55343
 ```
+::: {.callout-note}
+## Campaign information
+
+Minnetonka Stop at Six is registered as
+
+* Minnesota Campaign Finance Board - `60098`
+* Minnesota Secretary of State File Number - `1630914800029`
+:::
+
 
 # Resources
 
